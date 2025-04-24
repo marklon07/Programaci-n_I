@@ -28,7 +28,13 @@ public abstract class Vehiculo {
 
     }
 
-    public String getId() {
+
+    public boolean agregarMision(Mision newMision) {
+        return listMisiones.add(newMision);
+    }
+
+
+        public String getId() {
         return id;
     }
 

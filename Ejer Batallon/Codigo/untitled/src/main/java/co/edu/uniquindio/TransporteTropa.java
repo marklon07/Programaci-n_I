@@ -3,7 +3,7 @@ package co.edu.uniquindio;
 public class TransporteTropa extends Vehiculo {
     private String capacidadSoldados;
 
-    public TransporteTropa(String id, String modelo, String anioFabricacion, String kilometraje, EstadoOperativo estadoOperativo, String capacidadSoldados){
+    public TransporteTropa(String id, String modelo, String anioFabricacion, int kilometraje, EstadoOperativo estadoOperativo, String capacidadSoldados){
         super(id, modelo, anioFabricacion, kilometraje, estadoOperativo);
         this.capacidadSoldados = capacidadSoldados;
     }

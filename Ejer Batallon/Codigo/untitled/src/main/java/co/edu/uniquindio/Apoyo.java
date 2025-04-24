@@ -3,7 +3,7 @@ package co.edu.uniquindio;
 public class Apoyo extends Vehiculo{
     private TipoFuncion tipoFuncion;
 
-    public Apoyo(String id, String modelo, String anioFabricacion, String kilometraje, EstadoOperativo estadoOperativo,  TipoFuncion tipoFuncion ) {
+    public Apoyo(String id, String modelo, String anioFabricacion, int kilometraje, EstadoOperativo estadoOperativo,  TipoFuncion tipoFuncion ) {
         super(id, modelo, anioFabricacion, kilometraje,  estadoOperativo );
         this.tipoFuncion = tipoFuncion;
     }

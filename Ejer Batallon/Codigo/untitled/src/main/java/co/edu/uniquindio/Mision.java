@@ -7,15 +7,16 @@ public class Mision {
     private String id;
     private LocalDate fecha;
     private String ubicacion;
-    private Vehiculo vehiculosAsignados;
-    private ArrayList<String> listPersonal;
+    private Vehiculo vehiculoAsignado;
+    private ArrayList<Soldado> listPersonal;
 
 
-    public Mision(String id, LocalDate fecha, String ubicacion, Vehiculo vehiculosAsignados) {
+    public Mision(String id, LocalDate fecha, String ubicacion) {
         this.id = id;
         this.fecha = fecha;
         this.ubicacion = ubicacion;
-        this.vehiculosAsignados = vehiculosAsignados;
+        this.vehiculoAsignado = vehiculoAsignado;
+        this.listPersonal = new ArrayList<>();
     }
     public String getId(){
         return id;
@@ -25,32 +26,42 @@ public class Mision {
     }
 
     public LocalDate getFecha() {
+
         return fecha;
     }
 
     public void setFecha(LocalDate fecha) {
+
         this.fecha = fecha;
     }
 
     public String getUbicacion() {
+
         return ubicacion;
     }
 
     public void setUbicacion(String ubicacion) {
+
         this.ubicacion = ubicacion;
     }
 
-    public Vehiculo getVehiculosAsignados() {
-        return vehiculosAsignados;
+    public Vehiculo getVehiculoAsignado() {
+
+        return vehiculoAsignado;
     }
 
-    public void setVehiculosAsignados(Vehiculo vehiculosAsignados) {
-        this.vehiculosAsignados = vehiculosAsignados;
+    public void setVehiculoAsignado(Vehiculo vehiculoAsignado) {
+
+        this.vehiculoAsignado = vehiculoAsignado;
     }
-    public ArrayList<String> gatListPersonal(){
+
+    public ArrayList<Soldado> getListPersonal(){
+
         return listPersonal;
     }
-    public void setListPersonal(ArrayList<String> listPersonal){
+
+    public void setListPersonal(ArrayList<Soldado> listPersonal){
+
         this.listPersonal = listPersonal;
     }
 }
