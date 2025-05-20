@@ -53,9 +53,9 @@ public class Estacion implements ICalcularPeaje {
     }
 
     //METODO PARA VER LISTADO DE VEHICULOS QUE LLEGARON AL PEAJE CON SU RESPECTIVO VALOR PAGADO     
-    public ArrayList<Vehiculo> vehiculosPeaje(String nombre, String departamento, double valor){
-        ArrayList<Vehiculo> listVehiculos = Estacion.getListVehiculos();
-        return listVehiculos;
+    public ArrayList<Vehiculo> vehiculosPeaje(){
+        ArrayList<Vehiculo> vehiculosPeaje = Estacion.getListVehiculos();
+        return vehiculosPeaje;
     }
 
     //METODO PARA TENER EL TOTAL ACUMULADO DE PEAJES

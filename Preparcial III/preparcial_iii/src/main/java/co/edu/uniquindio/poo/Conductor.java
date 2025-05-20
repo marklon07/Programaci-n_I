@@ -32,8 +32,6 @@ public class Conductor implements ICalcularPeaje{
     public double valorPeaje(){
         double valor = 0.0;
         for(Vehiculo vehiculo : listVehiculos){
-            double valor = 0.0;
-        
         if(vehiculo instanceof Carro){
             double base = 10000;
             if(((Carro)vehiculo).getTipo().equals(Tipo.ELECTRICO)){
